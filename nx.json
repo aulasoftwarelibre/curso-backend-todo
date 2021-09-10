@@ -27,6 +27,12 @@
     ]
   },
   "projects": {
+    "api": {
+      "tags": []
+    },
+    "json-server": {
+      "tags": []
+    },
     "web": {
       "tags": []
     },
