@@ -30,7 +30,13 @@
     "api": {
       "tags": []
     },
+    "contracts-todo": {
+      "tags": []
+    },
     "json-server": {
+      "tags": []
+    },
+    "modules-todo": {
       "tags": []
     },
     "web": {

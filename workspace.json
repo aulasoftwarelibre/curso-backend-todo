@@ -52,6 +52,28 @@
         }
       }
     },
+    "contracts-todo": {
+      "root": "libs/contracts/todo",
+      "sourceRoot": "libs/contracts/todo/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/contracts/todo/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/contracts/todo"],
+          "options": {
+            "jestConfig": "libs/contracts/todo/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "json-server": {
       "root": "apps/json-server",
       "sourceRoot": "apps/json-server/src",
@@ -98,6 +120,28 @@
           "outputs": ["coverage/apps/json-server"],
           "options": {
             "jestConfig": "apps/json-server/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "modules-todo": {
+      "root": "libs/modules/todo",
+      "sourceRoot": "libs/modules/todo/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/modules/todo/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/modules/todo"],
+          "options": {
+            "jestConfig": "libs/modules/todo/jest.config.js",
             "passWithNoTests": true
           }
         }

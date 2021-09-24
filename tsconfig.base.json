@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@todo/contracts/todo": ["libs/contracts/todo/src/index.ts"],
+      "@todo/modules/todo": ["libs/modules/todo/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
